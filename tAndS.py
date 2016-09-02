@@ -65,8 +65,6 @@ class Teacher(SchoolMember):
                 print('''
 姓名：%s,性别：%s,学号：%s,课程：%s,班级：%s,分数：%s'''
                      % (i.name,i.sex,i.stu_id,[x.name for x in i.cour_obj],i.class1,i.grade))
-            else:
-                print('meichenggong %s,   %s' % (int(stu_num_input),i.stu_id))
 
 class Student(SchoolMember):
     def __init__(self,name,sex,stu_id,cour_obj,class1=None,grade=60):
